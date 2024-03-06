@@ -43,8 +43,8 @@ Scan the QR code displayed in the Expo DevTools or enter the URL provided in the
 
 
 ## Screenshots 
-![WhatsApp Image 2024-03-06 at 1 20 58 PM](https://github.com/Antoney20/M-bank-Test/assets/101004140/c4695d18-f182-4f3b-9819-d52d6e2edc9a)
-![5efd6a01-c52b-4918-9454-d6edc860b50b](https://github.com/Antoney20/M-bank-Test/assets/101004140/1f812e1e-6440-4b95-b4af-b7307af844ac)
+![WhatsApp Image 2024-03-06 at 1 20 58 PM](https://github.com/Antoney20/M-bank-Test/assets/101004140/c4695d18-f182-4f3b-9819-d52d6e2edc9a){:height="100px"}
+![5efd6a01-c52b-4918-9454-d6edc860b50b](https://github.com/Antoney20/M-bank-Test/assets/101004140/1f812e1e-6440-4b95-b4af-b7307af844ac){:height="200px"}
 
 
 
