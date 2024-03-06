@@ -42,7 +42,6 @@ Download the Expo Go app from the App Store (iOS) or Google Play Store (Android)
 Scan the QR code displayed in the Expo DevTools or enter the URL provided in the terminal to open the project in Expo Go.
 
 
-
 ## Backend Setup
 The backend of this application is built with PHP Laravel.
 Here is the link to the backend setup. [Laravel Backend repo](https://github.com/Antoney20/mobile-api-test.git)
@@ -58,3 +57,23 @@ Start ngrok and tunnel the backend server port
     ngrok http 8000 
 
 Copy the ngrok URL provided and replace the base URL in the React Native  .env file application code with the ngrok URL.
+
+
+## Screenshots
+
+<div align="center">
+  <img src="./screenshots/home.jpeg" alt="home" width="100" height="100" style="margin-right: 20px;">
+  <img src="./screenshots/balance.jpeg" alt="balance"  width="100" height="100" style="margin-right: 20px;">
+  <img src="./screenshots/changepin.jpeg" alt="change pin"  width="100" height="100">
+</div>
+
+<div align="center">
+  <img src="./screenshots/cheque.jpeg" alt="cheque"  width="100" height="100" style="margin-right: 20px;">
+  <img src="./screenshots/deposit.jpeg" alt="Deposit"  width="100" height="100" style="margin-right: 20px;">
+  <img src="./screenshots/login.jpeg" alt="login "  width="100" height="100" >
+</div>
+<div align="center">
+  <img src="./screenshots/welcome.jpeg" alt="welcome"  width="100" height="100" style="margin-right: 20px;">
+  <img src="./screenshots/register.jpeg" alt="register"  width="100" height="100" style="margin-right: 20px;">
+  <img src="./screenshots/verify.jpeg" alt="verify"  width="100" height="100">
+</div>
