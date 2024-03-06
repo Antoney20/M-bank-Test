@@ -62,18 +62,18 @@ Copy the ngrok URL provided and replace the base URL in the React Native  .env f
 ## Screenshots
 
 <div align="center">
-  <img src="./screenshots/home.jpeg" alt="home" width="100" height="100" style="margin-right: 20px;">
-  <img src="./screenshots/balance.jpeg" alt="balance"  width="100" height="100" style="margin-right: 20px;">
-  <img src="./screenshots/changepin.jpeg" alt="change pin"  width="100" height="100">
+  <img src="./screenshots/home.jpeg" alt="home" width="200" height="200" style="margin-right: 20px;">
+  <img src="./screenshots/balance.jpeg" alt="balance"  width="200" height="200" style="margin-right: 20px;">
+  <img src="./screenshots/changepin.jpeg" alt="change pin"  width="200" height="200">
 </div>
 
 <div align="center">
-  <img src="./screenshots/cheque.jpeg" alt="cheque"  width="100" height="100" style="margin-right: 20px;">
-  <img src="./screenshots/deposit.jpeg" alt="Deposit"  width="100" height="100" style="margin-right: 20px;">
-  <img src="./screenshots/login.jpeg" alt="login "  width="100" height="100" >
+  <img src="./screenshots/cheque.jpeg" alt="cheque"  width="200" height="200" style="margin-right: 20px;">
+  <img src="./screenshots/deposit.jpeg" alt="Deposit"  width="200" height="200" style="margin-right: 20px;">
+  <img src="./screenshots/login.jpeg" alt="login "  width="200" height="200" >
 </div>
 <div align="center">
-  <img src="./screenshots/welcome.jpeg" alt="welcome"  width="100" height="100" style="margin-right: 20px;">
-  <img src="./screenshots/register.jpeg" alt="register"  width="100" height="100" style="margin-right: 20px;">
-  <img src="./screenshots/verify.jpeg" alt="verify"  width="100" height="100">
+  <img src="./screenshots/welcome.jpeg" alt="welcome"  width="200" height="200" style="margin-right: 20px;">
+  <img src="./screenshots/register.jpeg" alt="register"  width="200" height="200" style="margin-right: 20px;">
+  <img src="./screenshots/verify.jpeg" alt="verify"  width="200" height="200">
 </div>
