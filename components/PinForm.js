@@ -39,30 +39,36 @@ const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 20,
     paddingVertical: 10,
+    backgroundColor: '#f0f8ff', 
+    marginTop: 50,
+
   },
   label: {
     fontSize: 16,
     marginBottom: 5,
   },
   input: {
+    width: '100%',
     height: 40,
-    borderColor: 'gray',
+    borderColor: '#007bff', 
     borderWidth: 1,
     marginBottom: 10,
     paddingHorizontal: 10,
+    borderRadius: 5,
+    backgroundColor: '#ffffff',
   },
   errorText: {
     color: 'red',
     marginBottom: 10,
   },
   button: {
-    backgroundColor: 'blue',
+    backgroundColor: '#45b3e0',
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 10,
   },
   buttonText: {
-    color: 'white',
+    color: '#f1f1f1',
     fontWeight: 'bold',
     fontSize: 16,
   },

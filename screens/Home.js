@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import HomeForm from '../components/HomeForm';
 import { BASE_URL } from '@env';
+import { FontAwesome } from '@expo/vector-icons';
 
 const Home = ({ navigation }) => {
   const [userData, setUserData] = useState(null);
@@ -31,12 +32,29 @@ const Home = ({ navigation }) => {
       }
     };
 
+
     getUserData();
   }, []);
 
+  const handleLogout = async () => {
+    try {
+      await AsyncStorage.removeItem('accessToken');
+      navigation.navigate('Login');
+    } catch (error) {
+      console.error('Error logging out:', error);
+    }
+  };
+
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to M-Bank</Text>
+      <View style={styles.header}>
+        <Text style={styles.title}>Welcome to M-Bank</Text>
+        <TouchableOpacity onPress={handleLogout} style={styles.logoutButton}>
+          <FontAwesome name="sign-out" size={24} color="black" />
+          <Text style={styles.logoutButtonText}>Logout</Text>
+        </TouchableOpacity>
+      </View>
       {userData ? (
         <View>
           <Text style={styles.userInfo}>Welcome, {userData.user.name}</Text>
@@ -59,10 +77,16 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     backgroundColor: '#f0f8ff', 
   },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 20,
+    color: 'black',
   },
   userInfo: {
     marginBottom: 20, 
@@ -83,6 +107,13 @@ const styles = StyleSheet.create({
   },
   boldText: {
     fontWeight: 'bold',
+  },
+  logoutButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  logoutButtonText: {
+    marginLeft: 5,
   },
 });
 

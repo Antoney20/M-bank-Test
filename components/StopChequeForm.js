@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { BASE_URL } from '@env';
 import AsyncStorage from '@react-native-async-storage/async-storage'; 
+import { BASE_URL } from '@env';
 
 const StopChequeForm = () => {
   const [chequeNo, setChequeNo] = useState('');
@@ -19,15 +19,13 @@ const StopChequeForm = () => {
     }
 
     try {
-
       const accessToken = await AsyncStorage.getItem('accessToken');
       if (!accessToken) {
         setError('Access token not found.');
         return;
       }
-      
-      const response = await fetch(`${BASE_URL}/api/cheques/`, {
-        method: 'GET',
+      const response = await fetch(`${BASE_URL}/api/cheques/stop`, {
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -37,12 +35,12 @@ const StopChequeForm = () => {
       const data = await response.json();
 
       if (!response.ok) {
-        // If the request is not successful
+        // If the request is not successful, display error message
         setError(data.message || 'Failed to stop cheque.');
         return;
       }
 
-      // If the request is successful, 
+      // If the request is successful, display success message
       setSuccess('Cheque stopped successfully.');
 
       // Reset form fields
@@ -79,19 +77,28 @@ const StopChequeForm = () => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     paddingHorizontal: 20,
-    paddingVertical: 10,
+    paddingTop: 10,
+    maxHeight: 300,
+    backgroundColor: '#f0f8ff',
+    borderRadius: 10,
+    borderWidth: 1, 
+    borderColor: '#dcdcdc', 
   },
   label: {
     fontSize: 16,
     marginBottom: 5,
   },
   input: {
+    width: '100%',
     height: 40,
-    borderColor: 'gray',
+    borderColor: '#007bff', 
     borderWidth: 1,
     marginBottom: 10,
     paddingHorizontal: 10,
+    borderRadius: 5,
+    backgroundColor: '#ffffff',
   },
   errorText: {
     color: 'red',
@@ -106,7 +113,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   button: {
-    backgroundColor: 'blue',
+    backgroundColor: '#45b3e0',
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 10,

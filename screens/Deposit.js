@@ -42,8 +42,7 @@ const Deposit = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Deposit</Text>
-    
+  
       <DepositForm onDeposit={handleDeposit} onCancel={handleCancel} error={error} />
     </View>
   );

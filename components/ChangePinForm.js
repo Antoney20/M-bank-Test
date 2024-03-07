@@ -57,33 +57,50 @@ const ChangePinForm = ({ onSubmit }) => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     paddingHorizontal: 20,
-    paddingVertical: 10,
+    paddingTop: 10,
+    maxHeight: 400,
+    backgroundColor: '#ffffff',
+    borderRadius: 10,
+    borderWidth: 1, 
+    borderColor: '#dcdcdc', 
   },
   label: {
     fontSize: 16,
     marginBottom: 5,
   },
   input: {
+    width: '100%',
     height: 40,
-    borderColor: 'gray',
+    borderColor: '#007bff', 
     borderWidth: 1,
     marginBottom: 10,
     paddingHorizontal: 10,
+    borderRadius: 5,
+    backgroundColor: '#ffffff',
   },
   errorText: {
     color: 'red',
     marginBottom: 10,
   },
+  successText: {
+    color: 'green',
+    marginBottom: 10,
+  },
+  buttons: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
   button: {
-    backgroundColor: 'blue',
+    backgroundColor: '#45b3e0',
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 10,
     marginTop: 20,
   },
   buttonText: {
-    color: 'white',
+    color: '#ffffff',
     fontWeight: 'bold',
     fontSize: 16,
   },
